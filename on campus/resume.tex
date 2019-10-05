@@ -75,6 +75,21 @@
     \end{minipage}}\fi%
   \par\addvspace{#1}}
 
+\newcommand*{\customhead}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} 
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
 \newcommand*{\customcvproject}[4][.25em]{
 %   \vfill\noindent
   \begin{tabular}{@{}l} 
@@ -119,18 +134,34 @@
 }
 
 
-\section{EXPERIENCE}
-{\customcventry{Jun. 2016 - Sep. 2016, Jun. 2018 - Aug. 2019}{\textbf{Software Development Engineer - ISMP Department}}{Eastcom-BUPT Information Technology Co.,Ltd.}{Beijing, China}{}{}}
+\section{SKILLS}
+{\customhead{}{}{Programming}{}{}{}}
   {\begin{itemize}
-    \item Maintained the ISMP (Integrated Service Management Platform) (C++, Linux)
-    \item Developed the interface module of ISMP, which encodes and decodes between HTTP message and JSON message
-    \item Modified the Lua compiler. Added a new grammar (like annotation in Java) and banned specific variable names by modifing the lexical analyzer of the Lua compiler
-    \item Reconstructed the Lua virtual machine management module of ISMP using libevent library. Reduced the average response time by one-third
-    \item Created the interface of ISMP and microservice platform, which passes JSON message (Golang)
+    \item \textbf{Languages: }C/C++, Golang, Java, Android, Python, SQL, Assembly, HTML, JavaScript, CSS, PHP, VHDL, Verilog, Sell Script
+    \item \textbf{Technologies: }Git/GitHub, SVN, Linux, MySQL, SQL Server, MATLAB
   \end{itemize}
 }
 
-\section{PROJECTS}
+\setlength{\parskip}{0.5em}
+
+{\customhead{}{}{Software}{}{}{}}
+  {\begin{itemize}
+    \item Have 15-year Windows experience, and familiar with settings on windows
+    \item Familiar with Microsoft Office suite and Adobe Creative suite
+  \end{itemize}
+}
+
+\setlength{\parskip}{0.5em}
+
+{\customhead{}{}{Hardware}{}{}{}}
+  {\begin{itemize}
+    \item Repaired and upgraded laptops, including hardware replacement, desktop computer assembly, keyboard cleaning, replacement of silicone grease
+    \item Replaced bluetooth and WiFi antenna for iphone
+  \end{itemize}
+}
+
+
+\section{ACTIVITIES}
 
 % {\customcvproject{Amazing Project 1}{Aug 2017 - Present}
 %   {\begin{itemize}
@@ -155,34 +186,25 @@
 % \end{itemize}
 % }
 % }
-{\customcventry{Oct. 2018 - Apr. 2019}{\textbf{Supported by Wireless Communication Center, BUPT}}{Intelligent Healthcare Project}{Beijing, China}{}{}}
+{\customhead{}{}{College Technologies Assistant}{Oct. 2016 - Jun. 2019}{}{}}
   {\begin{itemize}
-    \item Collaborated with a group of graduate students to develop intelligent mattress
-    \item Developed and maintained server program, which uses Django to receive data from devices and store it in MySQL database
-    \item Built an Android APP, which is able to access data from the server and show with charts using Chart.js
+    \item Managed a Wechat official account, mainly providing software resource and install guides. It has over 1000 subscribers
+    \item Leaded 7 members to fixed software and hardware problems for students
+    \item Rewarded outstanding studnet leaders
   \end{itemize}
 }
 
 \setlength{\parskip}{0.5em}
 
-{\customcventry{Jun. 2018 - Oct. 2018}{\textbf{Supported by Becstrong Co.,Ltd.}}{IoT Nodes Embedded Development Project}{Beijing, China}{}{}}
+{\customhead{}{}{Organizer of soccer game volunteers}{Sep. 2016 - Dec. 2016}{}{}}
   {\begin{itemize}
-    \item Developed IoT node program on STM boards
-    \item Tested communication between boards using WiFi and Zigbee protocol
-    \item Built an Android APP to receive data and show with charts
+    \item Organized volunteers in BUPT to participate in Beijing College Union Cup soccer game
+    \item Coordinated the arrangement of volunteers with competition manager
   \end{itemize}
 }
 
-\setlength{\parskip}{0.5em}
 
-{\customcventry{Jun. 2017 - Oct. 2017}{\textbf{The first prize in BUPT Innovation Exhibition}}{Self-landing Quad-rotor Unmanned Aerial Vehicle}{Beijing, China}{}{}}
-  {\begin{itemize}
-    \item Collaborated with 6 team members to design a flight control system , which make UAV land automatically and centimeter-level precisely
-    \item Designed the short-range precise location equipment for UAV using Arduino, amplifier and ADC
-  \end{itemize}
-}
-
-\section{Skills}
+\section{EXPERIENCE}
 
 % {\customcventry{ Oct. 2015- Dec. 2016}{Technology Analyst}{Tata Consultancy Servies Limited}{Kolkata, India}{}
 % {\begin{itemize}
@@ -207,9 +229,12 @@
 %     \item Encapsulated the build scripts in a Jenkins automation server. The user-friendly Jenkins GUI empowered the developers to trigger new builds themselves. The DevOps effort saved was 2 man-days every week.
 % \end{itemize}
 % \end{flushleft}
+{\customcventry{Jun. 2016 - Sep. 2016, Jun. 2018 - Aug. 2019}{\textbf{Software Development Engineer - ISMP Department}}{Eastcom-BUPT Information Technology Co.,Ltd.}{Beijing, China}{}{}}
   {\begin{itemize}
-    \item  \textbf{Languages: }C/C++, Golang, Java, Python, SQL, Assembly, JavaScript, CSS, VHDL, Sell Script
-    \item  \textbf{Technologies: }Git, SVN, Linux, MySQL, SQL Server, MATLAB
+    \item Maintained the ISMP (Integrated Service Management Platform) (C++, Linux)
+    \item Modified the Lua compiler
+    \item Reconstructed the Lua virtual machine management module of ISMP using libevent library. Reduced the average response time by one-third
+    \item Created the interface of ISMP and microservice platform, which passes JSON message (Golang)
   \end{itemize}
 }
 %-----       letter       ---------------------------------------------------------
