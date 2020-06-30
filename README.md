@@ -12,5 +12,8 @@ Can use [Overleaf](https://www.overleaf.com/) for online compliation (Remember t
 
 ## Download
 
-- [English Version (PDF)](./resume.pdf)
-- [中文版 (PDF)](./resume-cn.pdf)
+### English Version
+[PDF](./resume.pdf) &emsp; [JPG](./resume.jpg)
+
+### 中文版
+[PDF](./resume-cn.pdf) &emsp; [JPG](./resume-cn.jpg)
