@@ -20,4 +20,4 @@ Can use [Overleaf](https://www.overleaf.com/) for online compliation (Remember t
 
 ## Preview
 
-![Chinese version](./resume-cn.jpg)
+<img src="./resume-cn.jpg" alt="Chinese version" width="45%"> <img src="./resume.jpg" alt="English version" width="45%">
