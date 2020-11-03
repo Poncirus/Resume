@@ -8,7 +8,7 @@ Based on [this project](https://github.com/ice1000/resume)
 
 Use XeLaTeX to compile.
 
-Can use [Overleaf](https://www.overleaf.com/) for online compliation (Remember to change compiler to XeLaTeX) 
+Can use [Overleaf](https://www.overleaf.com/) for online compliation (Remember to switch compiler to XeLaTeX) 
 
 ## Download
 
@@ -17,3 +17,7 @@ Can use [Overleaf](https://www.overleaf.com/) for online compliation (Remember t
 
 ### 中文版
 [PDF](./resume-cn.pdf) &emsp; [JPG](./resume-cn.jpg)
+
+## Preview
+
+![Chinese version](./resume-cn.jpg)
