@@ -5,7 +5,10 @@
 \usepackage{linespacing_fix}
 \usepackage[fallback]{xeCJK}
 
-\thispagestyle{empty}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{2021.10.25}
 
 \begin{document}
 
@@ -39,14 +42,13 @@
 \datedsubsection{\textbf{猿辅导}, 北京}{2021.03 -- 2021.09}
 软件开发工程师 - 基础研发部，直播中台，数据平台组
 \begin{itemize}[parsep=0.25ex]
-    \item 完成多个需求的Java Web开发，呈现直播中台相关数据指标
-    \item 使用Doris，Flink，Spark，Iceberg等工具进行大数据分析
-    \item 维护和迭代数据查询与可视化工具Redash，主要包括新数据源的支持，SQL编写方式和图表配置方式的扩展，报警功能的优化，内网登录的接入
-    \item 维护以Netty框架的打点采集服务，进行服务打压和容量估计
-    \item 优化打点重复和丢失的问题，问题用户比例从千分之几降低到万分之一
-    \item 设计并实现客户端上报打点的抽样统计方案和协议
-    \item 截取Sentry Kafka数据，对客户端崩溃信息进行分类处理
-    \item 完成打点日志从阿里云日志服务到Elasticsearch的迁移
+    \item 使用Doris，Flink，Spark，Iceberg等工具进行大数据分析，完成多个需求的Java Web开发，通过报表等形式呈现直播中台相关数据指标，为直播中台提供数据支持
+    \item 负责维护和迭代数据查询与可视化工具Redash，主要包括新数据源的支持，SQL编写方式和图表配置方式的扩展，报警功能的优化，内网登录的接入
+    \item 负责以Netty为框架的客户端打点采集服务，完成日常服务优化，进行服务打压和容量估计
+    \item 优化打点重复和丢失的问题，提出优化方案并领导执行，问题用户比例从千分之几降低到万分之一
+    \item 设计客户端抽样上报打点的方案和协议，领导实现相关功能
+    \item 截取Sentry Kafka数据，对客户端崩溃信息进行分类，并结合灰度开关等指标进行展示
+    \item 完成客户端百万QPS打点日志从阿里云日志服务到Elasticsearch的迁移
 \end{itemize}
 \datedsubsection{\textbf{华为}, 深圳}{2020.08 -- 2020.12}
 软件开发工程师（实习） - 2012实验室，中央软件院，庞加莱实验室

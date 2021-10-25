@@ -1,10 +1,16 @@
 % !TEX program = xelatex
 \documentclass{resume}
+\usepackage{fancyhdr}
 \usepackage{linespacing_fix}
 
-\thispagestyle{empty}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{2021.10.25}
 
 \begin{document}
+
+\renewcommand\headrulewidth{0pt}
 \name{Hanwen Liao}
 
 \basicInfo{
@@ -22,32 +28,31 @@ M.S. - Computer Engineering
 B.E. - Telecommunication Engineering
 
 \section{Work Experience}
-\datedsubsection{\textbf{Yuanfudao}, Beijing, China}{Mar. 2021 -- Present}
+\datedsubsection{\textbf{Yuanfudao}, Beijing, China}{Mar. 2021 -- Sep. 2021}
 Software Engineer - Basic R\&D Department, Live Broadcast Center, Data Platform Group
 \begin{itemize}[parsep=0.25ex]
-    \item Presented live streaming traffic statistics indicators 
-    \item Designed client-side sampling statisticss chemes and protocols
+    \item Used Doris, Flink, Spark, Iceberg and other tools for big data analysis, completed Java Web development for multiple requirements, and presented data indicators of live broadcast through reports and other forms
+    \item Maintained and iterated the data query and visualization tool Redash, which includes support for new data sources, expansion of SQL writing methods, optimization of alarm, and access to ldap login
+    \item Token responsible for log collection services based on Netty, completed service suppression
+    \item Optimized the problem of log duplication and loss, proposed an optimization plan and led the implementation, and reduced the proportion of problem users from a few thousandths to one ten thousandths
+    \item Desiged the protocol for sample reporting of logs and led the implementation of related functions
+    \item Intercepted Sentry data in Kafka, classified client crash reason, and analyzed it with other indicators
+    \item Completed the migration of client-side millions of QPS logs from Alibaba Log Service to Elasticsearch
 \end{itemize}
 \datedsubsection{\textbf{Huawei}, Shenzhen, China}{Aug. 2020 -- Dec. 2020}
 Software Engineer Intern - 2012 Lab, Central Software Institute, Poincaré Lab
 \begin{itemize}[parsep=0.25ex]
-    \item Analysised function call relationship  based on LLVM
+    \item Analyzed the function call relationship of Linux kernel and learned the principles of LLVM compilation
     \item Developed variable tracer based on LLVM
-\end{itemize}
-\datedsubsection{\textbf{New York University}, NY, US}{Jan. 2020 -- Jun. 2020}
-Teaching Assistant - Computer Architecture
-\begin{itemize}[parsep=0.25ex]
-    \item Taught review class and helped students comprehend the material
-    \item Ran office hours to assist students with questions on assignments and exams
 \end{itemize}
 \datedsubsection{\textbf{Eastcom-BUPT Information Technology Co.,Ltd.}, Beijing, China}{Jun. 2018 -- Aug. 2019}
 Software Engineer Intern - ISMP Department
 \begin{itemize}[parsep=0.25ex]
-    \item Maintained the ISMP (Integrated Service Management Platform) (C++, Linux)
+    \item Maintained the ISMP with C++ (Integrated Service Management Platform)
     \item Developed the interface module, which encodes and decodes between HTTP message and JSON message
     \item Modified the Lua compiler. Added a new grammar (like annotation in Java) and banned specific variable names by modifing the lexical analyzer of the Lua compiler
     \item Restructured the message distribution method, completed load balancing, and improved availability
-    \item Created the interface of ISMP and microservice platform, which passes JSON message (Golang)
+    \item Created the interface of ISMP and microservice platform with Golang, which passes JSON message
 \end{itemize}
 
 \section{Personal Projects}
@@ -55,14 +60,13 @@ Software Engineer Intern - ISMP Department
 Supported by Wireless Communication Center, BUPT
 \begin{itemize}[parsep=0.25ex]
     \item Collaborated with a group of graduate students to develop intelligent mattress
-    \item Developed and maintained server program, which uses Django to receive data from devices and store it in MySQL database
+    \item Developed server program, which receives data from devices and store it in MySQL database
     \item Built an Android APP, which is able to access data from the server and show with charts using Chart.js
 \end{itemize}
 \datedsubsection{\textbf{IoT Nodes Embedded Development Project}, Beijing, China}{Jun. 2018 -- Oct. 2018}
 Supported by Becstrong Co.,Ltd.
 \begin{itemize}[parsep=0.25ex]
     \item Developed IoT node program on STM boards
-    \item Tested communication between boards using WiFi and Zigbee protocol
     \item Built an Android APP to receive data and show with charts
 \end{itemize}
 
